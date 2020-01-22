@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <test />
+    <composition-ref />
+    <composition-reactive />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Test from "./components/CompositionTest.vue";
+import CompositionRef from "./components/CompositionRef.vue";
+import CompositionReactive from "./components/CompositionReactive.vue";
 
 @Component({
   components: {
-    Test
+    CompositionRef,
+    CompositionReactive
   }
 })
 export default class App extends Vue {}
