@@ -11,13 +11,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from "vue-property-decorator";
 import { computed, ref } from "@vue/composition-api";
-
-interface TestEvent {
-  capacity: number;
-  attending: string[];
-}
 
 export default {
   setup() {
